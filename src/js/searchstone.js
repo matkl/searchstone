@@ -100,22 +100,8 @@ searchstone.addWidget(
       return playerClass.indexOf(a.name) - playerClass.indexOf(b.name);
     },
     templates: {
+      header: 'Classes',
       item: '<a href="#" class="list-group-item{{#isRefined}} active{{/isRefined}}" data-facet-value="{{name}}"><span class="value">{{name}}</span></a>'
-    }
-  })
-);
-
-//Player Class - mobile
-searchstone.addWidget(
-  instantsearch.widgets.menu({
-    container: '#playerClassFiltersPanel',
-    attributeName: 'playerClass',
-    limit: 10,
-    sortBy: function(a,b){
-      return playerClass.indexOf(a.name) - playerClass.indexOf(b.name);
-    },
-    templates: {
-      item: '<a href="#" class="list-group-item{{#isRefined}} active{{/isRefined}}" data-facet-value="{{name}}"></a>'
     }
   })
 );

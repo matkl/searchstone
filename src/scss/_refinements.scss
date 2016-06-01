@@ -292,15 +292,21 @@
     background-position: 138px -22px;
   }
 }
-
 #playerClass{
-  text-align: center;
   margin-top: 20px;
-  @media (max-width: 600px){
-    display: none;
+  .ais-menu--list {
+      overflow: hidden;
+  } 
+  .ais-body {
+    text-align: center;
   }
   .ais-menu--item {
     display: inline-block;
+    @media (min-width: 961px) {
+      float: left;
+      width: 50%;
+      text-align: left;
+    }
     a{
       width: auto;
       color: rgba(white,.7);
@@ -311,17 +317,17 @@
       padding: 0 12px 0 44px;
       border: solid 2px rgba(#3C10C9,.3);
       border-radius: 40px;
-      line-height: 42px;
+      line-height: 28px;
       position: relative;
-      margin-right: 8px;
-      margin-bottom: 8px;
+      margin-right: 0;
+      margin-bottom: 0;
       opacity: .7;
-      @media (max-width: 1400px){
+      @media (max-width: 961px){
         display: block;
-        margin-right: 8px;
+        margin-right: 0;
         font-size: 0;
         padding: 1px;
-        width: 44px;
+        width: 35px;
       }
       .value {
         display: block;
@@ -350,11 +356,11 @@
     &::before{
       content: "";
       position: absolute;;
-      top: 6px;
-      left: 8px;
+      top: 0;
+      left: 0;
       width: 32px;
       height:32px;
-      margin-right: 3px;
+      margin-right: 0;
       background: url('img/ClassIcons.png');
       background-size: 170px;
     }
